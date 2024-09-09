@@ -6,10 +6,10 @@ int numberOfSandwiches;
 int numberOfToppings;
 double tip;
 
-Console.WriteLine("Please enter number of sandwiches: ");
+Console.WriteLine("Please enter total number of sandwiches: ");
 numberOfSandwiches = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Please enter number of toppings needed: ");
+Console.WriteLine("Please enter total number of toppings: ");
 numberOfToppings = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Please enter tip amount, expressed as a decimal: ");
@@ -27,4 +27,4 @@ baseCost = totalSandwichCost + totalToppingCost;
 double orderCost = 0;
 orderCost = tip + baseCost * (1-DISCOUNT_AMOUNT);
 
-Console.WriteLine("Your total order cost is : " + orderCost);
+Console.WriteLine("Your total order cost is: " + orderCost);
